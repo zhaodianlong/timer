@@ -1,0 +1,22 @@
+<!--pages/show/show.wxml-->
+<view class='content'>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='move-item' wx:for="{{moveData}}" wx:key="index" bindtap='toDetail' data-moveid="{{item.id}}">
+    <image src="{{item.img}}"></image>
+    <view class='info-msg'>
+      <text class='title text'>{{item.tCn}}</text>
+      <text class='tag' wx:if="{{item.is3D}}">3D</text><text class='tag' wx:if="{{item.isIMAX}}">IMAX</text>
+      <text class='dec text'>{{item.commonSpecial}}</text>
+      <text class='text'>{{item.actors}}</text>
+    </view>
+    <text class='rating' wx:if="{{item.ratingFinal}}">{{item.ratingFinal}}</text>
+    <button size="mini" class='pay-btn' bindtap='payMsg'>购票</button>
+  </view>
+</view>

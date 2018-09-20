@@ -1,0 +1,21 @@
+/* pages/mdetail/mdetail.wxss */
+page{
+  height: 100%;
+  font-family: "Microsoft YaHei";
+}
+.content{
+  min-height: 100%;
+  padding: 30rpx;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+.title{
+  display: block;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin-bottom: 30rpx;
+}
+.reback{
+  margin-top: 80rpx;
+}

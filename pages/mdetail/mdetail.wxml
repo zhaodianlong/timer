@@ -1,0 +1,7 @@
+<!--pages/mdetail/mdetail.wxml-->
+<view class='content'>
+  <text class='title'>{{detail.basic.name}}</text>
+  {{detail.basic.story}}
+  <button class='reback' bindtap='prePage'>返回</button>
+</view>
+

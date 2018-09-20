@@ -1,0 +1,69 @@
+/* pages/show/show.wxss */
+page{
+  height: 100%;
+  font-family: "Microsoft YaHei"
+}
+.content{
+  min-height: 100%;
+}
+swiper-item image.slide-image{
+  width: 100%;
+}
+.move-item{
+  overflow: hidden;
+  border-bottom: 1px solid #c4c2c2;
+  position: relative;
+  padding: 8rpx 0;
+}
+.move-item image{
+  width: 200rpx;
+  height: 300rpx;
+  float: left;
+  vertical-align: middle;
+}
+.move-item .info-msg{
+  padding: 20rpx 30rpx;
+  float: left;
+}
+.move-item .info-msg .text{
+  display: block;
+  font-size: 24rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 450rpx;
+  white-space: nowrap;
+  margin-bottom: 10rpx;
+  color: #999;
+}
+.move-item .info-msg text.title{
+  font-size: 28rpx;
+  color: #666;
+  font-weight: bold;
+}
+.move-item .info-msg .tag{
+  background-color: #eee;
+  color: #666;
+  font-size: 20rpx;
+  font-weight: normal;
+  border-radius: 10rpx;
+  margin-right: 10rpx;
+  padding: 8rpx 16rpx;
+  margin-bottom: 10rpx;
+  display: inline-block;
+}
+.move-item .info-msg text.dec{
+  font-size: 28rpx;
+  color: #999;
+}
+.move-item .pay-btn{
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx;
+  color: orange;
+}
+.move-item .rating{
+  position:absolute;
+  top:30rpx;
+  right:30rpx;
+  color: green;
+}

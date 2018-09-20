@@ -1,0 +1,75 @@
+/* pages/future/future.wxss */
+page{
+  height: 100%;
+  font-family: "Microsoft YaHei"
+}
+.content{
+  min-height: 100%;
+  background: #fff;
+}
+.list{
+  position: relative;
+}
+.list .date{
+  display: block;
+  font-size: 28rpx;
+  text-indent: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: #f6f6f6;
+}
+.list .item-box{
+  padding: 20rpx 0;
+  overflow: hidden;
+  /* border-bottom: 1px solid #666; */
+  margin: 0 30rpx;
+}
+.list .line{
+  box-sizing:content-box;
+  margin: 0 15px;
+  height: 1px;
+  background-color:#e6e6e6;
+}
+.list .btn{
+  position: absolute;
+  right: 30rpx;
+  bottom: 20rpx;
+  background-color: #fff;
+}
+.list .btn icon{
+  margin-right: 8rpx;
+}
+.list .want-btn{
+  color: orange;
+}
+.list .want-btn::after{
+  border-color: orange;
+}
+.list .future-btn{
+  color: green;
+}
+.list .future-btn::after{
+  border-color: green;
+}
+.item-box image{
+  width: 100rpx;
+  height: 150rpx;
+  float: left;
+}
+.item-box .text-box{
+  float: left;
+  padding: 10rpx 20rpx;
+}
+.item-box .text{
+  display: block;
+  font-size: 28rpx;
+  color: #999;
+}
+.item-box .title{
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+  color: #666;
+}
+.item-box .text .want{
+  color: orange;
+}

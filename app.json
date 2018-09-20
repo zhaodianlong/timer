@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/show/show",
+    "pages/future/future",
+    "pages/mdetail/mdetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "时光网",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/show/show",
+        "text": "正在热映",
+        "iconPath": "images/showing.png",
+        "selectedIconPath": "images/showing-active.png"
+      },
+      {
+        "pagePath": "pages/future/future",
+        "text": "即将上映",
+        "iconPath": "images/future.png",
+        "selectedIconPath": "images/future-active.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+<!--pages/future/future.wxml-->
+<view class="content">
+  <view class="list" wx:for="{{moveComings}}" wx:key="index">
+    <text class="date" wx:if="{{moveComings[index-1].rDay !== item.rDay}}">{{item.rMonth}}月{{item.rDay}}日</text>
+    <view class='item-box' bindtap='toDetail' data-moveid="{{item.id}}">
+      <image src="{{item.image}}"></image>
+      <view class="text-box">
+        <text class="text title">{{item.title}}</text>
+        <text class="text"><text class='want'>{{item.wantedCount}}</text>人想看 - {{item.type}}</text>
+        <text class="text">{{item.actor1}}<text wx:if="{{item.actor2}}">/{{item.actor2}}</text></text>
+      </view>
+    </view>
+    <view class='line' wx:if="{{moveComings[index+1].rDay === item.rDay}}"></view>
+    <button class='btn future-btn' size='mini' wx:if="{{item.isTicket}}" bindtap='wantFn' data-name="预售"><icon class='iconfont icon-xin'></icon>预售</button>
+    <button class='btn want-btn' size='mini' wx:else bindtap='wantFn' data-name="想看"><icon class='iconfont icon-xin'></icon>想看</button>
+  </view>
+</view>
